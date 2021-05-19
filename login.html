@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
     <script
       src="https://kit.fontawesome.com/91f739af8c.js"
       crossorigin="anonymous"
@@ -13,40 +14,32 @@
 </head>
 <body>
     <div class="service">
-        No Service
+        <div>No Service
         <i class="fas fa-wifi"></i>
-        <id=time>18:43</id>
-        110%
+        </div>
+        18:43
+        <div>110%
         <i class="fas fa-battery-three-quarters"></i>
         <i class="fas fa-bolt"></i>
+        </div>
     </div>
 
     <div class="Explanation">
-        <id="big">
-        <h1>Welcome to Kokoa Clone</h1> 
-        </id>
-        <id="small">
-        if yiu have a Kokoa Account, log in with you email or phone number.
-        </id>
+        <p class= "max">Welcome to Kokoa Clone</p>
+        <div class= "min">lf you have a Kokoa Account, log in with you email or phone number.</div>
     </div>
 
     <div class="input">
-        <div class="login-id">
-            <input placeholder="Email or phone number" type="text" id="id">
-        </div>
-        <div class="login-Password">
-            <input placeholder="Password" type="Password" id="Password">
-        </div>
+        <input placeholder="Email or phone number" type="text" class="id">
+        <input placeholder="Password" type="text" class="Password">
     </div>
 
     <div class="button">
-        <button onclick="signIn()" id="Sign-in">Log in</button>
-        <button onclick="signIn()" id="Sign-in">Sign up</button>
+        <button type="button"onclick="signIn()" id="Sign-in">Log in</button>
+        <button type="button"onclick="signIn()" id="Sign-up">Sign up</button>
     </div>
 
     <div class="min">
         Find Kokoa Account or Password</div>
-
-    
 </body>
 </html>
