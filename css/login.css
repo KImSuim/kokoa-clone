@@ -1,7 +1,6 @@
 .service {
     display: flex;
-    justify-content :space-between;
-    background-color: #f8585b;
+    justify-content :space-between; 
 }
 .Explanation {
     text-align: center; 
@@ -32,7 +31,6 @@ input{
     margin-right:15px;
 }
 .id{
-
     margin-top: 90px;
 }
 .Password{
