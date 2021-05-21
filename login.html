@@ -25,20 +25,37 @@
     </div>
 
     <div class="Explanation">
-        <p class= "max">Welcome to Kokoa Clone</p>
-        <div class= "min">lf you have a Kokoa Account, log in with you email or phone number.</div>
+        <p class= "Max">Welcome to Kokoa Clone</p>
+        <div class= "Min">lf you have a Kokoa Account, log in with you email or phone number.</div>
+    </div>
+<div class="formContainer">
+    <div id="security">
+        <div id="Id">
+            <input placeholder="Email or phone number" type="text">
+        </div>
+        <div id="Password">
+            <input placeholder="Password" type="text">
+        </div>
     </div>
 
-    <div class="input">
-        <input placeholder="Email or phone number" type="text" class="id">
-        <input placeholder="Password" type="text" class="Password">
-    </div>
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number" />
+        <input name="userpassword" type="password" placeholder="Password" />
+
+        <input type="submit" value="Log in" />
+        <input type="submit" value="Sign up" />
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
 
     <div class="button">
-        <button type="button"onclick="signIn()" id="Sign-in">Log in</button>
-        <button type="button"onclick="signIn()" id="Sign-up">Sign up</button>
+        <div>
+            <button type="button"onclick="signIn()" id="Sign-in">Log in</button>
+        </div>
+        <div>
+            <button type="button"onclick="signIn()" id="Sign-up">Sign up</button>
+        </div>
     </div>
-
+</div>
     <div class="min">
         Find Kokoa Account or Password</div>
 </body>
