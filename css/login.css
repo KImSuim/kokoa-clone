@@ -29,6 +29,8 @@
     display: flex;
     flex-direction: column;
     margin: 0px 30px;
+    margin-top: 80px;
+    border: none;
 }
 #Id{
     margin-top: 80px;

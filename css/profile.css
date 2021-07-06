@@ -26,8 +26,6 @@
     display: table-cell; 
     vertical-align: middle;
     background-color: rgb(245, 244, 244);
-    margin-left:-7px; 
-    margin-right:-7px;
 }
 .gray i {
     color: rgb(168, 165, 165);
@@ -87,7 +85,7 @@
     width: 480px;
     height: 37px;
     font-size: 22px;
-    margin-top: 180px;
+    margin-top: 234px;
 }
 .lower i {
     margin-right: 86px;
