@@ -18,62 +18,13 @@
     font-size: 13px;
     font-weight: 100;
 }
-.formContainer {
-    
-    width:96%;
-}
-#security{
-    text-align: center;
-}
 #login-form {
     display: flex;
     flex-direction: column;
-    margin: 0px 30px;
+    margin: 0px 10px;
     margin-top: 80px;
     border: none;
 }
-#Id{
-    margin-top: 80px;
-}
-#Id input {
-
-    width: 450px;
-
-}
-#Password input {
-    width: 450px;
-}
-#Password{
-    margin-top: 15px;
-}
-#security input {
-    border :none;
-    border-bottom : 1px solid #000;
-}
-.button {
-    text-align: center;
-   
-}
-    #Sign-in{
-        width:450px; 
-        height: 40px;
-        padding: 10px ;
-        background-color: #ffd000;
-        border: 0;
-        border-radius:3px;
-        color:rgb(0, 0, 0);
-        margin-top: 20px;
-    }
-    #Sign-up{
-        width:450px; 
-        height: 40px;
-        padding: 10px ;
-        background-color: #ffd000;
-        border: 0;
-        border-radius:3px;
-        color:rgb(0, 0, 0);
-        margin-top: 20px;
-    }
 .min {
     text-align: center;
     font-size: 5px;
