@@ -24,12 +24,9 @@ body {
     display: flex;
     font-size: 18px;
     font-weight: 550;
-    height: 90px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
     margin-left: 13px;
     margin-right: 13px;
+    height: 377px;
 }
 .profile img {
     margin-top: 8px;
@@ -37,38 +34,32 @@ body {
     overflow: hidden;
 }
 .top {
-    justify-content: space-around;
-    align-items: baseline;
-    align-content: center; 
-}
-#name{
+    display: block;
     margin-left: 15px;
-    margin-top: 18px;
+    margin-top: 10px;
 }
 #time{
-    display: flex;
-    flex-direction: row;
-    margin-left: 280px;
+    margin-top: 10px;
+    text-align:right;
+    font-weight: 500;
+    margin-left: 120px;
     font-size: 13px;
     color: rgb(202, 197, 197);   
 }
 #message{
-    display: block;
-    margin-left: 15px;
     font-size: 13px;
     color: rgb(202, 197, 197);
 }
-
-/*회색 박스 여백 없이 색 채우는 방법
-+아이콘 버튼으로 만들기(html에서 버튼을 주고 아이콘을 씌우려느데 잘 안되 질문)
-+여백 사용하여 정렬하는 방법
-(margin-rigth로 계속 여백을 넣으려고 하는데 한계가 있어서 질문)*/
-
 .lower {
+    border: 2px solid rgb(228, 228, 228);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     justify-content: space-around;
-    background-color: rgb(202, 197, 197) ;
-    width: 500px;
     height: 43px;
     font-size: 22px;
-    margin-top: 375px;
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
+    text-align: center; 
 }
+

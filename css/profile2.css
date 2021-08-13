@@ -20,15 +20,12 @@ body {
     font-size: 15px;
     margin-left:22px; 
 }
-/*회색 박스 여백 없이 색 채우는 방법*/
 .gray {
-    font-size: 14px;
-    text-align: center;
-    width: 500px;
-    height: 35px;
-    display: table-cell; 
-    vertical-align: middle;
-    background-color: rgb(245, 244, 244);
+    font-size: 15px;
+    text-align: center; 
+    height: 25px;
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
 }
 .gray i {
     color: rgb(168, 165, 165);
@@ -38,12 +35,7 @@ body {
     font-size: 18px;
     font-weight: 550;
     height: 90px;
-    border : 1px solid rgb(197, 195, 195);
-    border-top: none;
-    border-left: none;
-    border-right: none;
     margin-left: 13px;
-    margin-right: 13px;
 }
 .profile img {
     margin-top: 8px;
@@ -56,42 +48,64 @@ body {
     text-align: center;
 }
 .clannel{
-    margin-top: 8px;
+    border : 1px solid rgb(197, 195, 195);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    
+    margin-left: 13px;
+    margin-right: 13px;
+
+    height: 45px;
+
+    display: flex;
+    justify-content: space-between;
+
     font-size: 14px;
     color: rgb(168, 165, 165);
-    margin-left: 13px;
+}
+.clannel p {
+    margin-top: 5px;
 }
 .clannel i {
+    margin-top: 10px;
     font-size: 8px;
-    margin-left: 400px;
 }
 .friend {
     display: flex;
-    margin-top: 20px;
     margin-left: 13px;
+    height: 216px;
 }
 .friend img{
     border-radius: 40%;
     overflow: hidden;
 }
-.friend p {
+.friend div{
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+}
+#name {
     margin-top: 11px;
     margin-left: 15px;
 }
-.friend div {
+#num {
     font-size: 10px;
     color: rgb(202, 197, 197);
-    margin-top: 11px;
-    margin-left: 328px;
+    margin-top: 15px;
 }
 /*회색 박스 여백 없이 색 채우는 방법
 +아이콘 버튼으로 만들기(html에서 버튼을 주고 아이콘을 씌우려느데 잘 안되 질문)*/
 .lower {
+    border: 2px solid rgb(228, 228, 228);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     justify-content: space-around;
-    background-color: rgb(202, 197, 197) ;
-    width: 500px;
     height: 43px;
     font-size: 22px;
-    margin-top: 245px;
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
+    text-align: center; 
 }
 
