@@ -15,6 +15,7 @@ body {
     margin-right:13px;
     margin-top: 5px;
     margin-bottom: 5px;
+    
 }
 .Friends i {
     font-size: 15px;
@@ -23,7 +24,7 @@ body {
 .gray {
     font-size: 15px;
     text-align: center; 
-    height: 25px;
+    line-height: 35px;
     background-color: rgb(247, 247, 247);
     margin: 0 auto;
 }
@@ -74,7 +75,7 @@ body {
 .friend {
     display: flex;
     margin-left: 13px;
-    height: 216px;
+    height: 206px;
 }
 .friend img{
     border-radius: 40%;

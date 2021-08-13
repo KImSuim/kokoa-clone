@@ -42,7 +42,7 @@ body{
 .nikko {
     display: flex;
     justify-content: space-between;
-    height: 260px;
+    height: 258px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -81,7 +81,7 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-top: 80px;
-    margin-bottom: 145px;
+    margin-bottom: 143px;
     margin-right: 25px;
 }
 #times{
@@ -97,27 +97,14 @@ body{
     font-size: 14px;
     margin-left: 5px;
 }
-
-.lower {
-    background-color: rgb(233, 233, 233);
-    width: 500px;
-    height: 40px;
-    font-size: 20px;
-}
-.one{
-    display: flex;
-    margin-left: 20px;
-    font-size: 18px;
-}
 #chating{
-    border: 1.5px solid rgb(189, 189, 189);
-	border-radius: 30px 30px 30px 30px;
+    background-color: rgb(233, 233, 233);
+	border-radius: 30px 0px 0px 30px;
     text-align: left;
-    line-height: 33px;
+    line-height: 40px;
     color: gray;
     font-size: 13px;
-    width: 430px;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 2px;
+    width: 500px;
+    position: absolute;  
+    margin-top: 2px;  
 }
