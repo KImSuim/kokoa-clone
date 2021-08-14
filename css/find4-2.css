@@ -41,7 +41,6 @@ body {
     font-weight: 550;
     border-left: none;
     border-right: none;
-    width: 465px;
 }
 .Max{
     font-size: 11px;
@@ -56,25 +55,29 @@ body {
     font-size: 12px;
     font-weight: 550;
     justify-content: space-between;
+    height: 50px;
 }
 .big-R{
     color: rgb(196, 196, 196);
     margin-right: 10px;
 }
 #end{
+    display: flex;
     justify-content: space-between;
+    height: 120px;
 }
 #left{
     font-weight: 550;
     font-size: 13px;
     margin-left: 10px;
-    margin-top: 50px;
 }
 #two{
     color: gray;
 }
 #three{
+    
     color: gray;
+    display: flex;
 }
 .lower {
     border: 2px solid rgb(228, 228, 228);
