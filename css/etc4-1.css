@@ -1,7 +1,8 @@
 .service {
+    font-size: 11px;
     display: flex;
-    justify-content :space-between; 
-    height: 25px;
+    justify-content :space-between;
+    margin: 3px;
 }
 .middle{
     border: 1.5px solid rgb(207, 207, 207);

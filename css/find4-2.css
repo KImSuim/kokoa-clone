@@ -2,9 +2,10 @@ body {
     margin:0px;
 }
 .service {
-    font-size: 13px;
+    font-size: 11px;
     display: flex;
-    justify-content :space-between; 
+    justify-content :space-between;
+    margin: 3px;
 }
 .Friends {
     display: flex;
@@ -15,10 +16,22 @@ body {
     margin-right:13px;
     margin-top: 5px;
     margin-bottom: 5px;
+    height: 40px;
 }
 .Friends i {
     font-size: 15px;
-    margin-left:22px; 
+    margin-left:20px; 
+}
+.manew{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 85px;
+}
+.manew p {
+    font-size: 12px;
 }
 .middle{
     border: 1.5px solid rgb(207, 207, 207);
@@ -40,7 +53,7 @@ body {
     display: flex;
     margin-left: 10px;
     color: gray;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 550;
     justify-content: space-between;
 }
@@ -64,12 +77,14 @@ body {
     color: gray;
 }
 .lower {
+    border: 2px solid rgb(228, 228, 228);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     justify-content: space-around;
-    background-color: rgb(245, 245, 245) ;
-    width: 400px;
     height: 43px;
     font-size: 22px;
-    border: 1.5px solid rgb(207, 207, 207);
-    margin-left: -10px;
-    margin-top: 60px;
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
+    text-align: center; 
 }
