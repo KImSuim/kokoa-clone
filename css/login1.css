@@ -1,6 +1,11 @@
+body {
+    margin:0px;
+}
 .service {
+    font-size: 11px;
     display: flex;
-    justify-content :space-between; 
+    justify-content :space-between;
+    margin: 3px;
 }
 .Explanation {
     text-align: center; 

@@ -5,7 +5,7 @@ window.onload=function signIn() {
     console.log(password.value);
     if(id.value =="id") {
         if(password.value == "suim") {
-            window.location.href = "http://127.0.0.1:5501/profile.html";
+            window.location.href = "profile2.html";
         }
         else {
             alert("비밀번호가 틀렸습니다.")

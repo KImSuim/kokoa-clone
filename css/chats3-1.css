@@ -2,9 +2,10 @@ body {
     margin:0px;
 }
 .service {
-    font-size: 13px;
+    font-size: 11px;
     display: flex;
-    justify-content :space-between; 
+    justify-content :space-between;
+    margin: 3px;
 }
 .Friends {
     display: flex;
@@ -20,13 +21,18 @@ body {
     font-size: 15px;
     margin-left:15px; 
 }
+.youchat{
+    background-color: white;
+    display: flex;
+    border: none;
+    width:440px;
+}
 .profile {
     display: flex;
-    font-size: 18px;
-    font-weight: 550;
+    justify-content: space-between;
     margin-left: 13px;
     margin-right: 13px;
-    height: 377px;
+    height: 80px;
 }
 .profile img {
     margin-top: 8px;
@@ -34,21 +40,26 @@ body {
     overflow: hidden;
 }
 .top {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 550;
     display: block;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #time{
     margin-top: 10px;
     text-align:right;
     font-weight: 500;
-    margin-left: 120px;
     font-size: 13px;
     color: rgb(202, 197, 197);   
 }
 #message{
     font-size: 13px;
     color: rgb(202, 197, 197);
+}
+.blank{
+    height: 298px;
 }
 .lower {
     border: 2px solid rgb(228, 228, 228);
@@ -57,9 +68,27 @@ body {
     border-right: none;
     justify-content: space-around;
     height: 43px;
-    font-size: 22px;
     background-color: rgb(247, 247, 247);
     margin: 0 auto;
     text-align: center; 
 }
-
+.lower button {
+    border: none;
+    background-color: rgb(247, 247, 247);
+    width: 10;
+    height: 40px;
+    margin-top: 2px;
+}
+.Second {
+    margin-left: 90px;
+}
+.third {
+    margin-left: 90px;
+}
+.fourth {
+    margin-left: 90px;
+}
+.lower button i {
+    color: black;
+    font-size: 22px;
+}

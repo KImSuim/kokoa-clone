@@ -2,9 +2,10 @@ body {
     margin:0px;
 }
 .service {
-    font-size: 13px;
+    font-size: 11px;
     display: flex;
-    justify-content :space-between; 
+    justify-content :space-between;
+    margin: 3px;
 }
 .Friends {
     display: flex;
@@ -21,6 +22,10 @@ body {
     font-size: 15px;
     margin-left:22px; 
 }
+.setttings{
+    background-color: white;
+    border: none;
+}
 .gray {
     font-size: 15px;
     text-align: center; 
@@ -36,7 +41,7 @@ body {
     font-size: 18px;
     font-weight: 550;
     height: 90px;
-    margin-left: 13px;
+    margin-left: 15px;
 }
 .profile img {
     margin-top: 8px;
@@ -54,8 +59,8 @@ body {
     border-left: none;
     border-right: none;
     
-    margin-left: 13px;
-    margin-right: 13px;
+    margin-left: 15px;
+    margin-right: 15px;
 
     height: 45px;
 
@@ -74,17 +79,17 @@ body {
 }
 .friend {
     display: flex;
-    margin-left: 13px;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
     height: 206px;
+}
+.chatt{
+    display: flex;
 }
 .friend img{
     border-radius: 40%;
     overflow: hidden;
-}
-.friend div{
-    display: flex;
-    width: 430px;
-    justify-content: space-between;
 }
 #name {
     margin-top: 11px;
@@ -104,9 +109,27 @@ body {
     border-right: none;
     justify-content: space-around;
     height: 43px;
-    font-size: 22px;
     background-color: rgb(247, 247, 247);
     margin: 0 auto;
     text-align: center; 
 }
-
+.lower button {
+    border: none;
+    background-color: rgb(247, 247, 247);
+    width: 10;
+    height: 40px;
+    margin-top: 2px;
+}
+.Second {
+    margin-left: 90px;
+}
+.third {
+    margin-left: 90px;
+}
+.fourth {
+    margin-left: 90px;
+}
+.lower button i {
+    color: black;
+    font-size: 22px;
+}

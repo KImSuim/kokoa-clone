@@ -86,8 +86,27 @@ body {
     border-right: none;
     justify-content: space-around;
     height: 43px;
-    font-size: 22px;
     background-color: rgb(247, 247, 247);
     margin: 0 auto;
     text-align: center; 
+}
+.lower button {
+    border: none;
+    background-color: rgb(247, 247, 247);
+    width: 10;
+    height: 40px;
+    margin-top: 2px;
+}
+.Second {
+    margin-left: 90px;
+}
+.third {
+    margin-left: 90px;
+}
+.fourth {
+    margin-left: 90px;
+}
+.lower button i {
+    color: black;
+    font-size: 22px;
 }
