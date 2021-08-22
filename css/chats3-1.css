@@ -54,14 +54,27 @@ body {
     font-size: 13px;
     color: rgb(202, 197, 197);   
 }
+.one_up{
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 60%;
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    color: white; 
+}
 #message{
     font-size: 13px;
     color: rgb(202, 197, 197);
 }
-.blank{
-    height: 298px;
-}
 .lower {
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    align-items: center;
+    width: 100%;
+    
     border: 2px solid rgb(228, 228, 228);
     border-bottom: none;
     border-left: none;
@@ -69,24 +82,22 @@ body {
     justify-content: space-around;
     height: 43px;
     background-color: rgb(247, 247, 247);
-    margin: 0 auto;
-    text-align: center; 
 }
 .lower button {
     border: none;
     background-color: rgb(247, 247, 247);
     width: 10;
-    height: 40px;
     margin-top: 2px;
 }
-.Second {
-    margin-left: 90px;
+.Second{
+    display: flex;
 }
-.third {
-    margin-left: 90px;
-}
-.fourth {
-    margin-left: 90px;
+.one{
+    border-radius: 60%;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
 }
 .lower button i {
     color: black;

@@ -21,6 +21,13 @@ body {
     font-size: 15px;
     margin-left:15px; 
 }
+.point{
+    position: relative; bottom: 20px; left: 10px;
+    border-radius: 60%;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+}
 .profile {
     display: flex;
     justify-content: space-between;
@@ -68,15 +75,14 @@ body {
     font-size: 13px;
     font-weight: 550;
     color: gray;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 13px;
-    height: 135px;
 }
 .add{
     display: flex;
     justify-content: flex-start;
     text-align: center;
-    height: 100px;
+
 }
 .clannel img {
     border-radius: 20%;
@@ -88,6 +94,12 @@ body {
     margin-left: 20px;
 }
 .lower {
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    align-items: center;
+    width: 100%;
+    
     border: 2px solid rgb(228, 228, 228);
     border-bottom: none;
     border-left: none;
@@ -95,24 +107,22 @@ body {
     justify-content: space-around;
     height: 43px;
     background-color: rgb(247, 247, 247);
-    margin: 0 auto;
-    text-align: center; 
 }
 .lower button {
     border: none;
     background-color: rgb(247, 247, 247);
     width: 10;
-    height: 40px;
     margin-top: 2px;
 }
-.Second {
-    margin-left: 90px;
+.Second{
+    display: flex;
 }
-.third {
-    margin-left: 90px;
-}
-.fourth {
-    margin-left: 90px;
+.one{
+    border-radius: 60%;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
 }
 .lower button i {
     color: black;

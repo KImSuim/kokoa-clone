@@ -42,7 +42,6 @@ body{
 .nikko {
     display: flex;
     justify-content: space-between;
-    height: 258px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -97,7 +96,57 @@ body{
     font-size: 14px;
     margin-left: 5px;
 }
+.lower {
+    position: fixed;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    bottom: 0px;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.message_icon_container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+}
+.message_container {
+    display: flex;
+}
+.icon_container{
+    display: flex;
+}
+.one{
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+}
 #chating{
+    border: 1.5px solid rgb(189, 189, 189);
+	border-radius: 30px 30px 30px 30px;
+    
+    height:35px;
+    color: gray;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    
+}
+#chating input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#icon_up {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*#chating{
     background-color: rgb(233, 233, 233);
 	border-radius: 30px 0px 0px 30px;
     text-align: left;
@@ -107,4 +156,4 @@ body{
     width: 500px;
     position: absolute;  
     margin-top: 2px;  
-}
+}*/

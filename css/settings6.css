@@ -65,12 +65,13 @@ body {
     font-size: 13px;
     color: rgb(173, 173, 173);
 }
-.blank{
-    height: 232px;
-}
-/*회색 박스 여백 없이 색 채우는 방법
-+아이콘 버튼으로 만들기(html에서 버튼을 주고 아이콘을 씌우려느데 잘 안되 질문)*/
 .lower {
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    align-items: center;
+    width: 100%;
+    
     border: 2px solid rgb(228, 228, 228);
     border-bottom: none;
     border-left: none;
@@ -78,24 +79,22 @@ body {
     justify-content: space-around;
     height: 43px;
     background-color: rgb(247, 247, 247);
-    margin: 0 auto;
-    text-align: center; 
 }
 .lower button {
     border: none;
     background-color: rgb(247, 247, 247);
     width: 10;
-    height: 40px;
     margin-top: 2px;
 }
-.Second {
-    margin-left: 90px;
+.Second{
+    display: flex;
 }
-.third {
-    margin-left: 90px;
-}
-.fourth {
-    margin-left: 90px;
+.one{
+    border-radius: 60%;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
 }
 .lower button i {
     color: black;
