@@ -1,0 +1,132 @@
+/* 채팅 배경 전체 설정 */
+.chat_background {
+  min-height: 100vh;
+  padding-bottom: 100px; /* reply 높이보다 크게 설정 */
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Reply 컨테이너 고정 */
+.reply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 9999; /* 가장 위에 표시 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  /* 키보드가 올라와도 사라지지 않도록 */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Reply 컬럼들 */
+.reply__column:first-child {
+  flex-shrink: 0;
+}
+
+.reply__column:last-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 0;
+}
+
+/* Input 스타일 */
+.reply__column input {
+  width: 100%;
+  padding: 12px 80px 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px; /* iOS 줌 방지 */
+  outline: none;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+
+  /* 포커스 시 이동 방지 */
+  position: static !important;
+  transform: none !important;
+  margin: 0 !important;
+}
+
+.reply__column input:focus {
+  border-color: #007aff;
+  background-color: white;
+
+  /* 강제로 위치 고정 */
+  position: static !important;
+  transform: translateY(0) !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+}
+
+/* 이모티콘 아이콘 */
+.reply__column .fa-smile-wink {
+  position: absolute;
+  color: #999;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* 전송 버튼 */
+.reply__column button {
+  position: absolute;
+  right: 10px;
+  background-color: #007aff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* 플러스 아이콘 */
+.reply__column .fa-plus-square {
+  color: #999;
+  cursor: pointer;
+}
+
+/* 모바일 키보드 대응 */
+@media screen and (max-height: 600px) {
+  .reply {
+    position: fixed;
+    bottom: 0;
+    /* 키보드가 올라와도 계속 보이도록 */
+  }
+}
+
+/* iOS Safari 대응 */
+@supports (-webkit-appearance: none) {
+  .reply {
+    padding-bottom: max(15px, env(safe-area-inset-bottom));
+  }
+}
+
+/* 전체 body 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* 모바일에서 주소창 숨김 방지 */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}

@@ -1,0 +1,114 @@
+.head_container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.name_display {
+  background: #f3f3f3;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+
+#display {
+  font-weight: 500;
+}
+.channel_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+#up_icon {
+  opacity: 0.3;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 20px 30px;
+}
+
+#name {
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.show_name {
+  color: gray;
+}
+
+.profile2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  padding: 20px 30px;
+}
+.info_plus {
+  display: flex;
+  align-items: center;
+  opacity: 0.3;
+}
+
+#next {
+  padding-right: 8px;
+}
+
+.channel_name {
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.channel_img_name {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #f3f3f3;
+  border: 2px solid silver;
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+#chat {
+  position: relative;
+  display: flex;
+}
+
+#chat span {
+  display: block;
+  background-color: red;
+  border-radius: 30px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  color: white;
+}
+
+#channel_Twitter img {
+  width: 65px;
+  height: 65px;
+  border-radius: 25px;
+  margin-left: 0px;
+}
+
+#Twitter img {
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  margin-left: 0px;
+}

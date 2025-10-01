@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Chat</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="chat_background">
+      <div class="head-container">
+        <div id="Service">
+          No Service<span class="wifi"><i class="fas fa-wifi"></i></span>
+        </div>
+        <div id="time">18:43</div>
+        <div id="battery">
+          110%<span class="bolt"
+            ><i class="fas fa-battery-three-quarters"></i></span
+          ><i class="fas fa-bolt"></i>
+        </div>
+      </div>
+
+      <div class="chat_friend_name_container">
+        <div class="left_icon">
+          <a href="chats.html"><i class="fas fa-chevron-left"></i></a>
+        </div>
+        <div class="chat_friend_name">
+          <span>나민</span>
+        </div>
+        <div class="menu_icon">
+          <div class="menu_search"><i class="fas fa-search"></i></div>
+          <div class="menu_bar"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+      <div class="days_container">
+        <div class="days">
+          <span>Tuesday, June 30, 2020</span>
+        </div>
+      </div>
+
+      <div class="twitter_profile">
+        <div>
+          <img src="img/트위터2.png" />
+        </div>
+        <div class="user_name_comment">
+          <div id="user_name"><span>나민</span></div>
+          <div class="user_comment_time">
+            <div id="user_comment"><span>Hi!</span></div>
+            <div id="user_time"><span>21:27</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat_content_container">
+        <div class="chat_co">
+          <div id="chat_time"><span>21:27</span></div>
+          <div class="chat_content"><span>Hi nice meet you!</span></div>
+        </div>
+      </div>
+
+      <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a messsage..." />
+          <i class="far fa-smile-wink fa-lg"></i>
+          <button><i class="fas fa-arrow-up"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/91f739af8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/setting.js"></script>
+
+    <script>
+      // 메시지 전송 기능
+      function sendMessage() {
+        const input = document.querySelector(".reply__column input");
+        const messageText = input.value.trim();
+
+        if (messageText === "") return; // 빈 메시지는 전송하지 않음
+
+        // 현재 시간 생성
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const currentTime = `${hours}:${minutes}`;
+
+        // 새로운 메시지 컨테이너 생성
+        const chatContainer = document.createElement("div");
+        chatContainer.className = "chat_content_container";
+
+        chatContainer.innerHTML = `
+                <div class="chat_co">
+                    <div id="chat_time"><span>${currentTime}</span></div>
+                    <div class="chat_content"><span>${messageText}</span></div>
+                </div>
+            `;
+
+        // 기존 채팅 내용 뒤에 새 메시지 추가
+        const lastChatContainer = document.querySelector(
+          ".chat_content_container:last-of-type"
+        );
+        if (lastChatContainer) {
+          lastChatContainer.insertAdjacentElement("afterend", chatContainer);
+        } else {
+          // 첫 번째 메시지인 경우
+          const twitterProfile = document.querySelector(".twitter_profile");
+          twitterProfile.insertAdjacentElement("afterend", chatContainer);
+        }
+
+        // 입력창 초기화
+        input.value = "";
+
+        // 새로 추가된 메시지로 스크롤 이동
+        chatContainer.scrollIntoView({ behavior: "smooth", block: "end" });
+      }
+
+      // 엔터 키로 메시지 전송
+      document
+        .querySelector(".reply__column input")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            e.preventDefault(); // 기본 폼 제출 방지
+            sendMessage();
+          }
+        });
+
+      // 전송 버튼 클릭으로 메시지 전송
+      document
+        .querySelector(".reply__column button")
+        .addEventListener("click", function (e) {
+          e.preventDefault(); // 기본 폼 제출 방지
+          sendMessage();
+        });
+
+      // 실시간 시간 업데이트 (상단 상태바)
+      function updateTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const timeString = `${hours}:${minutes}`;
+
+        const timeElement = document.getElementById("time");
+        if (timeElement) {
+          timeElement.textContent = timeString;
+        }
+      }
+
+      // 페이지 로드 시 즉시 시간 업데이트
+      updateTime();
+
+      // 1초마다 시간 업데이트
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
